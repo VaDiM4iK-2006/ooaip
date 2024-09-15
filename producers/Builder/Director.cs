@@ -23,6 +23,7 @@ namespace Builder
             _builder.AddPickles();
             _builder.AddSalad();
             _builder.AddTomato();
+            _builder.AddVobla();
         }
     }
 }
