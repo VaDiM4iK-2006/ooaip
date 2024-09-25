@@ -8,6 +8,9 @@ namespace FactoryMethod.Loft
 {
     public class LoftChair : IChair
     {
-
+        public string Result()
+        {
+            return "loft chair";
+        }
     }
 }

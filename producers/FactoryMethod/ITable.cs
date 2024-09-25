@@ -8,6 +8,6 @@ namespace FactoryMethod
 {
     public interface ITable
     {
-
+        string Result();
     }
 }

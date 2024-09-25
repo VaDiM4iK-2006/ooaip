@@ -8,6 +8,9 @@ namespace FactoryMethod.Loft
 {
     public class LoftTable : ITable
     {
-
+        public string Result()
+        {
+            return "loft table";
+        }
     }
 }

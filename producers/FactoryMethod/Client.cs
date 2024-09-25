@@ -8,5 +8,11 @@ namespace FactoryMethod
         {
             _creator = creator;
         }
+        public void Execution()
+        {
+            string chair = _creator.ProcessChair();
+            string table = _creator.ProcessTable();
+            string sofa = _creator.ProcessSofa();
+        }
     }
 }

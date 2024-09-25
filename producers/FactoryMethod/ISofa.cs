@@ -8,6 +8,6 @@ namespace FactoryMethod
 {
     public interface ISofa
     {
-
+        string Result();
     }
 }

@@ -8,6 +8,9 @@ namespace FactoryMethod.HighTech
 {
     public class HighTechSofa : ISofa
     {
-
+        public string Result()
+        {
+            return "high-tech sofa";
+        }
     }
 }

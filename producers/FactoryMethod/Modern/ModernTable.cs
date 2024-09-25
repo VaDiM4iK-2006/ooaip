@@ -8,6 +8,9 @@ namespace FactoryMethod.Modern
 {
     public class ModernTable : ITable
     {
-
+        public string Result()
+        {
+            return "modern table";
+        }
     }
 }

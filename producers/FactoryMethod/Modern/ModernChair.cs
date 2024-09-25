@@ -8,6 +8,9 @@ namespace FactoryMethod.Modern
 {
     public class ModernChair : IChair
     {
-
+        public string Result()
+        {
+            return "modern chair";
+        }
     }
 }
