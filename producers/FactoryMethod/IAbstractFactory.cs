@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace AbstractFactory
+namespace FactoryMethod
 {
     public interface IAbstractFactory
     {

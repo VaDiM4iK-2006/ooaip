@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "producers", "producers", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "producers\AbstractFactory\AbstractFactory.csproj", "{ABC1EB53-F7BE-4653-9D72-DC3B7BBE635F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "producers\Builder\Builder.csproj", "{0A453FEB-4EA2-4136-B5EA-C8E91A1E7308}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "producers\Builder\Builder.csproj", "{0A453FEB-4EA2-4136-B5EA-C8E91A1E7308}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "producers\FactoryMethod\FactoryMethod.csproj", "{3DB2ED66-4634-4616-9F2F-783F97650B32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{0A453FEB-4EA2-4136-B5EA-C8E91A1E7308}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A453FEB-4EA2-4136-B5EA-C8E91A1E7308}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A453FEB-4EA2-4136-B5EA-C8E91A1E7308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB2ED66-4634-4616-9F2F-783F97650B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB2ED66-4634-4616-9F2F-783F97650B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB2ED66-4634-4616-9F2F-783F97650B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB2ED66-4634-4616-9F2F-783F97650B32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{ABC1EB53-F7BE-4653-9D72-DC3B7BBE635F} = {1CC5743D-0AB3-495D-BD4E-BB6B55DA8DC0}
 		{0A453FEB-4EA2-4136-B5EA-C8E91A1E7308} = {1CC5743D-0AB3-495D-BD4E-BB6B55DA8DC0}
+		{3DB2ED66-4634-4616-9F2F-783F97650B32} = {1CC5743D-0AB3-495D-BD4E-BB6B55DA8DC0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3ADEE1B6-8A9E-48AA-A2A3-BCA0F240B101}

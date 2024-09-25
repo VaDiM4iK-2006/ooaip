@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbstractFactory
+namespace FactoryMethod.Modern
 {
-    public class HTChair : IChair
+    public class ModernTable : ITable
     {
 
     }

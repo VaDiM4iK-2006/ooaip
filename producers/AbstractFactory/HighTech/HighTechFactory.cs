@@ -4,21 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbstractFactory
+namespace AbstractFactory.HighTech
 {
-    public class ModernFactory : IAbstractFactory
+    public class HighTechFactory : IAbstractFactory
     {
         public IChair CreateChair()
         {
-            return new ModernChair();
+            return new HighTechChair();
         }
         public ITable CreateTable()
         {
-            return new ModernTable();
+            return new HighTechTable();
         }
         public ISofa CreateSofa()
         {
-            return new ModernSofa();
+            return new HighTechSofa();
         }
     }
 }

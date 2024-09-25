@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbstractFactory
+namespace AbstractFactory.HighTech
 {
-    public class LoftTable : ITable
+    public class HighTechTable : ITable
     {
 
     }

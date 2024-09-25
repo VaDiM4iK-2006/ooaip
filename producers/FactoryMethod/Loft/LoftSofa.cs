@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbstractFactory
+namespace FactoryMethod.Loft
 {
-    public class HTSofa : ISofa
+    public class LoftSofa : ISofa
     {
 
     }

@@ -17,6 +17,5 @@ namespace Builder
         void AddCheese();
         void AddOnion();
         void AddVobla();
-        Burger MakeBurger();
     }
 }
