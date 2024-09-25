@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod.HighTech
 {
-    public class HighTechFactory : IAbstractFactory
+    public class HighTechCreator : Creator
     {
-        public IChair CreateChair()
+        protected override IChair CreateChair()
         {
             return new HighTechChair();
         }
-        public ITable CreateTable()
+        protected override ITable CreateTable()
         {
             return new HighTechTable();
         }
-        public ISofa CreateSofa()
+        protected override ISofa CreateSofa()
         {
             return new HighTechSofa();
         }

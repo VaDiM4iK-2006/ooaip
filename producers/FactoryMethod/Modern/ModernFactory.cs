@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod.Modern
 {
-    public class ModernFactory : IAbstractFactory
+    public class ModernCreator : Creator
     {
-        public IChair CreateChair()
+        protected override IChair CreateChair()
         {
             return new ModernChair();
         }
-        public ITable CreateTable()
+        protected override ITable CreateTable()
         {
             return new ModernTable();
         }
-        public ISofa CreateSofa()
+        protected override ISofa CreateSofa()
         {
             return new ModernSofa();
         }

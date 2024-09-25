@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod.Loft
 {
-    public class LoftFactory : IAbstractFactory
+    public class LoftCreator : Creator
     {
-        public IChair CreateChair()
+        protected override IChair CreateChair()
         {
             return new LoftChair();
         }
-        public ITable CreateTable()
+        protected override ITable CreateTable()
         {
             return new LoftTable();
         }
-        public ISofa CreateSofa()
+        protected override ISofa CreateSofa()
         {
             return new LoftSofa();
         }

@@ -3,15 +3,10 @@ namespace FactoryMethod
 {
     public abstract class Client
     {
-        public string Create()
+        private Creator _creator;
+        public Client(Creator creator)
         {
-            var sofa = CreateSofa();
-            var chair = CreateChair();
-            var table = CreateTable();
-            return $"{sofa}{chair}{table}";
+            _creator = creator;
         }
-        protected abstract ISofa CreateSofa();
-        protected abstract IChair CreateChair();
-        protected abstract ITable CreateTable();
     }
 }
