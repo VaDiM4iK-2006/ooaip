@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Builder.Builders
+{
+    public class TestBurgerBuilder : IBurgerBuilder
+    {
+        private List<string> _ingrList;
+        public TestBurgerBuilder()
+        {
+            _ingrList = new List<string>();
+        }
+        public void AddMeat()
+        {
+            _ingrList.Add("Meat");
+        }
+        public void AddSalad()
+        {
+            _ingrList.Add("Salad");
+        }
+        public void AddPickles()
+        {
+            _ingrList.Add("Pickles");
+        }
+        public void AddTomato()
+        {
+            _ingrList.Add("Tomato");
+        }
+        public void AddBacon()
+        {
+            _ingrList.Add("Bacon");
+        }
+        public void AddSauce()
+        {
+            _ingrList.Add("Sauce");
+        }
+        public void AddCheese()
+        {
+            _ingrList.Add("Cheese");
+        }
+        public void AddOnion()
+        {
+            _ingrList.Add("Onion");
+        }
+        public void AddVobla()
+        {
+            _ingrList.Add("Vobla");
+        }
+        public bool TestBurger()
+        {
+            return (_ingrList.Contains("Meat") || _ingrList.Contains("Vobla"));
+        }
+    }
+}

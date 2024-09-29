@@ -4,52 +4,54 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Builder
+namespace Builder.Builders
 {
     public class BurgerBuilder : IBurgerBuilder
     {
-        private Burger _burger;
+        private List<string> _ingrList;
+        public BurgerBuilder()
+        {
+            _ingrList = new List<string>();
+        }
         public void AddMeat()
         {
-            _burger.Meat = true;
+            _ingrList.Add("Meat");
         }
         public void AddSalad()
         {
-            _burger.Salad = true;
+            _ingrList.Add("Salad");
         }
         public void AddPickles()
         {
-            _burger.Pickles = true;
+            _ingrList.Add("Pickles");
         }
         public void AddTomato()
         {
-            _burger.Tomato = true;
+            _ingrList.Add("Tomato");
         }
         public void AddBacon()
         {
-            _burger.Bacon = true;
+            _ingrList.Add("Bacon");
         }
         public void AddSauce()
         {
-            _burger.Sauce = true;
+            _ingrList.Add("Sauce");
         }
         public void AddCheese()
         {
-            _burger.Cheese = true;
+            _ingrList.Add("Cheese");
         }
         public void AddOnion()
         {
-            _burger.Onion = true;
+            _ingrList.Add("Onion");
         }
         public void AddVobla()
         {
-            _burger.Vobla = true;
+            _ingrList.Add("Vobla");
         }
         public Burger MakeBurger()
         {
-            Burger burger = _burger;
-            _burger = new();
-            return burger;
+            return new Burger(_ingrList);
         }
     }
 }

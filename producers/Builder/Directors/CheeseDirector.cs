@@ -3,27 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Builder.Builders;
 
-namespace Builder
+namespace Builder.Directors
 {
-    public class Director
+    public class CheeseDirector
     {
         private IBurgerBuilder _builder;
-        public Director(IBurgerBuilder builder)
+        public CheeseDirector(IBurgerBuilder builder)
         {
             _builder = builder;
         }
-        public void CreateBurger()
+        public void CreateCheeseBurger()
         {
             _builder.AddMeat();
             _builder.AddCheese();
             _builder.AddSauce();
-            _builder.AddBacon();
             _builder.AddOnion();
             _builder.AddPickles();
-            _builder.AddSalad();
             _builder.AddTomato();
-            _builder.AddVobla();
         }
     }
 }
