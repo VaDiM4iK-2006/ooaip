@@ -51,13 +51,7 @@ namespace Builder.Builders
         }
         public string ShowMenu()
         {
-            string menu = "";
-            foreach (string item in _ingrList)
-            {
-                menu += item;
-                menu += "\n";
-            }
-            return menu;
+            return string.Join("\n", _ingrList);
         }
     }
 }

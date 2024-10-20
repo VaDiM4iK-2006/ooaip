@@ -14,17 +14,17 @@ namespace Builder.Directors
         {
             _builder = builder;
         }
-        public void CreateCustomBurger()
+        public void CreateCustomBurger(string ingrList)
         {
-            if(Choise("Meat")) _builder.AddMeat();
-            if(Choise("Cheese")) _builder.AddCheese();
-            if(Choise("Sauce")) _builder.AddSauce();
-            if(Choise("Bacon")) _builder.AddBacon();
-            if(Choise("Onion")) _builder.AddOnion();
-            if(Choise("Pickles")) _builder.AddPickles();
-            if(Choise("Salad")) _builder.AddSalad();
-            if(Choise("Tomato")) _builder.AddTomato();
-            if(Choise("Vobla")) _builder.AddVobla();
+            if (ingrList.Contains("Meat")) _builder.AddMeat();
+            if (ingrList.Contains("Cheese")) _builder.AddCheese();
+            if (ingrList.Contains("Sause")) _builder.AddSauce();
+            if (ingrList.Contains("Bacon")) _builder.AddBacon();
+            if (ingrList.Contains("Onion")) _builder.AddOnion();
+            if (ingrList.Contains("Pickles")) _builder.AddPickles();
+            if (ingrList.Contains("Salad")) _builder.AddSalad();
+            if (ingrList.Contains("Tomato")) _builder.AddTomato();
+            if (ingrList.Contains("Vobla")) _builder.AddVobla();
         }
         private bool Choise(string ingr)
         {

@@ -7,10 +7,10 @@ using Builder.Builders;
 
 namespace Builder.Directors
 {
-    public class Director
+    public class BurgerDirector
     {
         private IBurgerBuilder _builder;
-        public Director(IBurgerBuilder builder)
+        public BurgerDirector(IBurgerBuilder builder)
         {
             _builder = builder;
         }
