@@ -26,11 +26,5 @@ namespace Builder.Directors
             if (ingrList.Contains("Tomato")) _builder.AddTomato();
             if (ingrList.Contains("Vobla")) _builder.AddVobla();
         }
-        private bool Choise(string ingr)
-        {
-            Console.WriteLine($"Add {ingr}? | 0 - n, 1 - y");
-            int answer = Convert.ToInt32( Console.ReadLine() );
-            return answer != 0;
-        }
     }
 }
