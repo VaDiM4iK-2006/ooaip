@@ -8,6 +8,6 @@ namespace Prototype
 {
     public interface ISofa : IPrototype
     {
-
+        ISofa Clone();
     }
 }

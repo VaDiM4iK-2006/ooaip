@@ -8,7 +8,7 @@ namespace Prototype.Loft
 {
     public class LoftChair : IChair
     {
-        public IPrototype Clone()
+        public IChair Clone()
         {
             return new LoftChair();
         }

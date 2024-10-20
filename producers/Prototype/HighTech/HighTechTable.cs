@@ -8,7 +8,7 @@ namespace Prototype.HighTech
 {
     public class HighTechTable : ITable
     {
-        public IPrototype Clone()
+        public ITable Clone()
         {
             return new HighTechTable();
         }

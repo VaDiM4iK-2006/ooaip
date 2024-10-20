@@ -8,7 +8,7 @@ namespace Prototype.Modern
 {
     public class ModernTable : ITable
     {
-        public IPrototype Clone()
+        public ITable Clone()
         {
             return new ModernTable();
         }

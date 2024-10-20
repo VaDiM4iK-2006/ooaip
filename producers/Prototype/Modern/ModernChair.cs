@@ -8,7 +8,7 @@ namespace Prototype.Modern
 {
     public class ModernChair : IChair
     {
-        public IPrototype Clone()
+        public IChair Clone()
         {
             return new ModernChair();
         }

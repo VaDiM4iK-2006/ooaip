@@ -8,7 +8,7 @@ namespace Prototype.Modern
 {
     public class ModernSofa : ISofa
     {
-        public IPrototype Clone()
+        public ISofa Clone()
         {
             return new ModernSofa();
         }

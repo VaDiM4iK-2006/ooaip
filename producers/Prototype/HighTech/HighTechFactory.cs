@@ -8,38 +8,27 @@ namespace Prototype.HighTech
 {
     public class HighTechFactory : IAbstractFactory
     {
-        private IPrototype _protoChair;
-        private IPrototype _protoTable;
-        private IPrototype _protoSofa;
-        public HighTechFactory(IPrototype protoChair, IPrototype protoTable, IPrototype protoSofa)
+        private IChair _protoChair;
+        private ITable _protoTable;
+        private ISofa _protoSofa;
+        public HighTechFactory(HighTechChair protoChair, HighTechTable protoTable, HighTechSofa protoSofa)
         {
             _protoChair = protoChair;
             _protoTable = protoTable;
             _protoSofa = protoSofa;
         }
-        public IPrototype CreateChair()
-        {
-            return new HighTechChair();
-        }
-        public IPrototype CreateTable()
-        {
-            return new HighTechTable();
-        }
-        public IPrototype CreateSofa()
-        {
-            return new HighTechSofa();
-        }
-        public IPrototype CloneChair()
+        public IChair CreateChair()
         {
             return _protoChair.Clone();
         }
-        public IPrototype CloneTable()
+        public ITable CreateTable()
         {
-            return _protoChair.Clone();
+            return _protoTable.Clone();
         }
-        public IPrototype CloneSofa()
+        public ISofa CreateSofa()
         {
-            return _protoChair.Clone();
+            return _protoSofa.Clone();
         }
+        
     }
 }

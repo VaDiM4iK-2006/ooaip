@@ -8,7 +8,7 @@ namespace Prototype.HighTech
 {
     public class HighTechChair : IChair
     {
-        public IPrototype Clone() 
+        public IChair Clone() 
         { 
             return new HighTechChair();
         }

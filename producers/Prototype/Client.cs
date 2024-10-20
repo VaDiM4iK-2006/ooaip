@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prototype.Loft;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,21 +9,17 @@ namespace Prototype
 {
     class Client
     {
-        private IPrototype _chair;
-        private IPrototype _table;
-        private IPrototype _sofa;
-        private IPrototype _chairClone;
-        private IPrototype _tableClone;
-        private IPrototype _sofaClone;
-
-        public Client(IAbstractFactory factory)
+        public Client()
         {
-            _chair = factory.CreateChair();
-            _table = factory.CreateTable();
-            _sofa = factory.CreateSofa();
-            _chairClone = _chair.Clone();
-            _tableClone = _table.Clone();
-            _sofaClone = _sofa.Clone();
+            var loftChair = new LoftChair();
+            var loftTable = new LoftTable();
+            var loftSofa = new LoftSofa();
+
+            var loftFactory = new LoftFactory(loftChair, loftTable, loftSofa);
+
+            var loftChairClone = loftFactory.CreateChair();
+            var loftTableClone = loftFactory.CreateTable();
+            var loftSofaClone = loftFactory.CreateSofa();
         }
     }
 }

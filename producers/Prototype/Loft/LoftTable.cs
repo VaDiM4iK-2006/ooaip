@@ -8,7 +8,7 @@ namespace Prototype.Loft
 {
     public class LoftTable : ITable
     {
-        public IPrototype Clone()
+        public ITable Clone()
         {
             return new LoftTable();
         }

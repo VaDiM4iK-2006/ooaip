@@ -4,8 +4,8 @@ namespace Prototype
 {
     public interface IAbstractFactory
     {
-        IPrototype CreateChair();
-        IPrototype CreateTable();
-        IPrototype CreateSofa();
+        IChair CreateChair();
+        ITable CreateTable();
+        ISofa CreateSofa();
     }
 }

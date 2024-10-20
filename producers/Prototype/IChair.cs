@@ -8,6 +8,6 @@ namespace Prototype
 {
     public interface IChair : IPrototype
     {
-
+        IChair Clone();
     }
 }

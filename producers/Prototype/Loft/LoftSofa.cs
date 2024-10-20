@@ -8,7 +8,7 @@ namespace Prototype.Loft
 {
     public class LoftSofa : ISofa
     {
-        public IPrototype Clone()
+        public ISofa Clone()
         {
             return new LoftSofa();
         }

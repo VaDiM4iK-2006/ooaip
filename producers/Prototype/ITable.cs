@@ -8,6 +8,6 @@ namespace Prototype
 {
     public interface ITable : IPrototype
     {
-
+        ITable Clone();
     }
 }
