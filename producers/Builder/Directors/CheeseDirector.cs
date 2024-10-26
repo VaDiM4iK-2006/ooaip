@@ -12,6 +12,7 @@ namespace Builder.Directors
         private IBurgerBuilder _builder;
         public CheeseDirector(IBurgerBuilder builder)
         {
+            if (builder == null) { throw new ArgumentNullException(); }
             _builder = builder;
         }
         public void CreateCheeseBurger()

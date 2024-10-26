@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,19 +13,28 @@ namespace Builder.Directors
         private IBurgerBuilder _builder;
         public ClientDirector(IBurgerBuilder builder)
         {
+            if (builder == null) { throw new ArgumentNullException(); }
             _builder = builder;
         }
-        public void CreateCustomBurger(string ingrList)
+        public void CreateCustomBurger(ReadOnlyCollection<string> ingrList)
         {
-            if (ingrList.Contains("Meat")) _builder.AddMeat();
-            if (ingrList.Contains("Cheese")) _builder.AddCheese();
-            if (ingrList.Contains("Sause")) _builder.AddSauce();
-            if (ingrList.Contains("Bacon")) _builder.AddBacon();
-            if (ingrList.Contains("Onion")) _builder.AddOnion();
-            if (ingrList.Contains("Pickles")) _builder.AddPickles();
-            if (ingrList.Contains("Salad")) _builder.AddSalad();
-            if (ingrList.Contains("Tomato")) _builder.AddTomato();
-            if (ingrList.Contains("Vobla")) _builder.AddVobla();
+            if (ingrList == null) { throw new ArgumentNullException(); }
+            foreach (var ingr in ingrList)
+            {
+                switch (ingr)
+                {
+                    case "Meat": { _builder.AddMeat(); break; }
+                    case "Cheese": { _builder.AddCheese(); break; }
+                    case "Sause": { _builder.AddSauce(); break; }
+                    case "Bacon": { _builder.AddBacon(); break; }
+                    case "Onion": { _builder.AddOnion(); break; }
+                    case "Pickles": { _builder.AddPickles(); break; }
+                    case "Salad": { _builder.AddSalad(); break; }
+                    case "Tomato": { _builder.AddTomato(); break; }
+                    case "Vobla": { _builder.AddVobla(); break; }
+                    default: break;
+                }
+            }
         }
     }
 }

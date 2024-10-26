@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,9 +50,9 @@ namespace Builder.Builders
         {
             _ingrList.Add("Vobla");
         }
-        public string ShowMenu()
+        public ReadOnlyCollection<string> ShowMenu()
         {
-            return string.Join("\n", _ingrList);
+            return new ReadOnlyCollection<string>(_ingrList);
         }
     }
 }
