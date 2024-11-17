@@ -16,7 +16,7 @@ namespace Builder.Directors
             if (builder == null) { throw new ArgumentNullException(); }
             _builder = builder;
         }
-        public void CreateCustomBurger(ReadOnlyCollection<string> ingrList)
+        public void CreateCustomBurger(IReadOnlyCollection<string> ingrList)
         {
             if (ingrList == null) { throw new ArgumentNullException(); }
             foreach (var ingr in ingrList)

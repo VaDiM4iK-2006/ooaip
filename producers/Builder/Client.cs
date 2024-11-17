@@ -14,7 +14,7 @@ namespace Builder
         public Client(MenuBuilder menuBuilder, TestBurgerBuilder tester) 
         {
             BurgerBuilder builder = new BurgerBuilder();
-            ReadOnlyCollection<string> Menu = menuBuilder.ShowMenu();
+            IReadOnlyCollection<string> Menu = menuBuilder.ShowMenu();
             var burger = new ClientDirector(builder);
             burger.CreateCustomBurger(Menu);
             if (tester.TestBurger() == false)

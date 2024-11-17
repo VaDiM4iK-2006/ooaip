@@ -4,8 +4,8 @@ namespace Builder
 {
     public class Burger
     {
-        public ReadOnlyCollection<string> Ingredients { get; }
-        public Burger(ReadOnlyCollection<string> ingrList)
+        public IReadOnlyCollection<string> Ingredients { get; }
+        public Burger(IReadOnlyCollection<string> ingrList)
         {
             Ingredients = ingrList;
         }

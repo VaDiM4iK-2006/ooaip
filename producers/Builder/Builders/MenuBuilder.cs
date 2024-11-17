@@ -50,9 +50,9 @@ namespace Builder.Builders
         {
             _ingrList.Add("Vobla");
         }
-        public ReadOnlyCollection<string> ShowMenu()
+        public IReadOnlyCollection<string> ShowMenu()
         {
-            return new ReadOnlyCollection<string>(_ingrList);
+            return new IReadOnlyCollection<string>(_ingrList);
         }
     }
 }
