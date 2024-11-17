@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Adapter
+namespace Adapter.Frog
 {
-    public interface IDuck
+    public interface IFrog
     {
-        void Quack();
+        string Croak();
     }
 }
