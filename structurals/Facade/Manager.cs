@@ -8,6 +8,8 @@
 
         public Manager(FrontendDev frontender, BackendDev backender, Designer designer)
         {
+            if (frontender == null || backender == null || designer == null) 
+            { throw new ArgumentNullException(); }
             _frontender = frontender;
             _backender = backender;
             _designer = designer;
