@@ -13,6 +13,7 @@ namespace Composite
         {
             _value = value;
         }
+
         public IEnumerable<double> GetValue()
         {
             yield return _value;

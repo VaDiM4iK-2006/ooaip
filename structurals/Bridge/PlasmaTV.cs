@@ -13,9 +13,10 @@ namespace Bridge
             if (status) return "tv is working!!!";
             return "..!";
         }
-        public string SetChannel(int channel_number)
+
+        public string SetChannel(int channelNumber)
         {
-            return $"channel№{channel_number} is on!!!";
+            return $"channel№{channelNumber} is on!!!";
         }
     }
 }

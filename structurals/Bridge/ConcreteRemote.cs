@@ -8,30 +8,35 @@ namespace Bridge
 {
     public class ConcreteRemote : Remote
     {
-        int selected_channel = 1;
+        private int selectedChannel = 1;
         public ConcreteRemote(ITV tv) : base(tv) { }
+
         public override void TurnOn()
         {
             _tv.WorkStatus(true);
         }
+
         public override void TurnOff()
         {
             _tv.WorkStatus(false);
         }
+
         public override void SetChannel(int number)
         {
-            selected_channel = number;
+            selectedChannel = number;
             _tv.SetChannel(number);
         }
+
         public void NextChannel()
         {
-            selected_channel++;
-            _tv.SetChannel(selected_channel);
+            selectedChannel++;
+            _tv.SetChannel(selectedChannel);
         }
+
         public void PrevChannel()
         {
-            selected_channel--;
-            _tv.SetChannel(selected_channel);
+            selectedChannel--;
+            _tv.SetChannel(selectedChannel);
         }
     }
 }

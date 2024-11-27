@@ -9,6 +9,6 @@ namespace Bridge
     public interface ITV
     {
         public string WorkStatus(bool status);
-        public string SetChannel(int channel_number);
+        public string SetChannel(int channelNumber);
     }
 }

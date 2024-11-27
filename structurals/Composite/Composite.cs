@@ -14,6 +14,7 @@ namespace Composite
         {
             _componentList.Add(component);
         }
+
         public IEnumerable<double> GetValue()
         {
             foreach (var component in _componentList)
