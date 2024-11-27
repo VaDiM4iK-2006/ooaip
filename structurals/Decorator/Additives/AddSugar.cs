@@ -10,6 +10,7 @@ namespace Decorator.Additives
     public class AddSugar : AddComponents
     {
         public AddSugar(ICoffee coffee) : base(coffee) { }
+
         public override decimal DoCost()
         {
             return 5;

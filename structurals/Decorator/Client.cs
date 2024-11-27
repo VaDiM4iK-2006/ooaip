@@ -14,6 +14,7 @@ namespace Decorator
         {
             return new Discount(new AddMilk(new AddSugar(new AddVanilla(new Mocha())))).Cost();
         }
+
         decimal BuyLatte()
         {
             return new Discount(new AddMilk(new AddSugar(new AddVanilla(new Latte())))).Cost();

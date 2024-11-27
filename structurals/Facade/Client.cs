@@ -10,15 +10,15 @@ namespace Facade
     {
         void Facade()
         {
-            FrontendDev Gosha = new FrontendDev();
-            BackendDev Yan = new BackendDev();
-            Designer Dmitry = new Designer();
+            var Gosha = new FrontendDev();
+            var Yan = new BackendDev();
+            var Dmitry = new Designer();
 
-            Manager Vasiliy_Ivanovich = new Manager(Gosha, Yan, Dmitry);
+            Manager VasiliyIvanovich = new Manager(Gosha, Yan, Dmitry);
 
-            Vasiliy_Ivanovich.AddButton();
-            Vasiliy_Ivanovich.FixUI();
-            Vasiliy_Ivanovich.FixBugs();
+            VasiliyIvanovich.AddButton();
+            VasiliyIvanovich.FixUI();
+            VasiliyIvanovich.FixBugs();
         }
     }
 }

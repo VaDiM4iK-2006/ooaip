@@ -11,10 +11,12 @@ namespace Adapter
     public class FrogToDuckAdapter : IDuck
     {
         private IFrog _adapteeFrog;
+
         public FrogToDuckAdapter(IFrog adapteeFrog)
         {
             _adapteeFrog = adapteeFrog == null ? throw new ArgumentNullException() : adapteeFrog;
         }
+
         public string Quack()
         {
             return _adapteeFrog.Croak();
