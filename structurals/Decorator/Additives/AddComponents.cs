@@ -20,7 +20,7 @@ namespace Decorator.Additives
 
         public decimal Cost()
         {
-            return Convert.ToDecimal(_coffee.Cost() + DoCost());
+            return _coffee.Cost() + DoCost();
         }
     }
 }
