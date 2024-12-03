@@ -8,7 +8,7 @@ namespace Bridge
 {
     public class Client
     {
-        void WatchTV()
+        public void WatchTV()
         {
             var tv = new PlasmaTV();
             var remote = new ConcreteRemote(tv);
