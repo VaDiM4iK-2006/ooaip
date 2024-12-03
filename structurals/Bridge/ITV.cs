@@ -8,7 +8,7 @@ namespace Bridge
 {
     public interface ITV
     {
-        public string WorkStatus(bool status);
-        public string SetChannel(int channelNumber);
+        string WorkStatus(bool status);
+        string SetChannel(int channelNumber);
     }
 }
