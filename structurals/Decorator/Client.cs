@@ -10,12 +10,12 @@ namespace Decorator
 {
     public class Client
     {
-        decimal BuyMocha()
+        public decimal BuyMocha()
         {
             return new Discount(new AddMilk(new AddSugar(new AddVanilla(new Mocha())))).Cost();
         }
 
-        decimal BuyLatte()
+        public decimal BuyLatte()
         {
             return new Discount(new AddMilk(new AddSugar(new AddVanilla(new Latte())))).Cost();
         }
