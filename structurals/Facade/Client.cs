@@ -8,13 +8,13 @@ namespace Facade
 {
     public class Client
     {
-        void Facade()
+        public void Facade()
         {
-            var Gosha = new FrontendDev();
-            var Yan = new BackendDev();
-            var Dmitry = new Designer();
+            var gosha = new FrontendDev();
+            var yan = new BackendDev();
+            var dmitry = new Designer();
 
-            Manager VasiliyIvanovich = new Manager(Gosha, Yan, Dmitry);
+            Manager VasiliyIvanovich = new Manager(gosha, yan, dmitry);
 
             VasiliyIvanovich.AddButton();
             VasiliyIvanovich.FixUI();
