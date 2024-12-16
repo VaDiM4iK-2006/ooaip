@@ -11,10 +11,9 @@ namespace Bridge
         public string WorkStatus(bool status)
         {
             if (status) 
-{
-return "tv is working...";
-}
-
+            {
+            return "tv is working...";
+            }
             return "...";
         }
 
