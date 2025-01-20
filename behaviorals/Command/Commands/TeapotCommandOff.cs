@@ -20,5 +20,10 @@ namespace Command.Commands
         {
             _teapot.Off();
         }
+
+        public void Undo()
+        {
+            _teapot.On();
+        }
     }
 }

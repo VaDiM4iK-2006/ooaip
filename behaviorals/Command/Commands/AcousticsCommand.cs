@@ -20,5 +20,10 @@ namespace Command.Commands
         {
             _acoustics.OnOff();
         }
+
+        public void Undo()
+        {
+            _acoustics.OnOff();
+        }
     }
 }

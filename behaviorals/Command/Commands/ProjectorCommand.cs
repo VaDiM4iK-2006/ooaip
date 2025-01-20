@@ -20,5 +20,10 @@ namespace Command.Commands
         {
             _projector.OnOff();
         }
+
+        public void Undo()
+        {
+            _projector.OnOff();
+        }
     }
 }

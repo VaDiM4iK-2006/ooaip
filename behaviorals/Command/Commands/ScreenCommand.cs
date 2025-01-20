@@ -20,5 +20,10 @@ namespace Command.Commands
         {
             _screen.UpDown();
         }
+
+        public void Undo()
+        {
+            _screen.UpDown();
+        }
     }
 }
