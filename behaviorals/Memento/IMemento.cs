@@ -2,6 +2,6 @@
 {
     public interface IMemento
     {
-
+        DateTime Date();
     }
 }
