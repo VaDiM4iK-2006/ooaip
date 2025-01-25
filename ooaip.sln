@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "behaviora
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "State", "behaviorals\State\State.csproj", "{BCAB0F7A-563F-4505-9855-72EB5A35A486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "behaviorals\Observer\Observer.csproj", "{1C166C93-0A50-4634-8A81-41F97B75CB4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer", "behaviorals\Observer\Observer.csproj", "{1C166C93-0A50-4634-8A81-41F97B75CB4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "behaviorals\Mediator\Mediator.csproj", "{E7E96126-ECFE-49C7-BA56-C052717A7D12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{1C166C93-0A50-4634-8A81-41F97B75CB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C166C93-0A50-4634-8A81-41F97B75CB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C166C93-0A50-4634-8A81-41F97B75CB4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7E96126-ECFE-49C7-BA56-C052717A7D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E96126-ECFE-49C7-BA56-C052717A7D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E96126-ECFE-49C7-BA56-C052717A7D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E96126-ECFE-49C7-BA56-C052717A7D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +152,7 @@ Global
 		{5C40AF52-B8DA-4E7A-B944-061AA440F682} = {909F5BCD-BEBD-4CF9-9CEC-EBC255DF4587}
 		{BCAB0F7A-563F-4505-9855-72EB5A35A486} = {909F5BCD-BEBD-4CF9-9CEC-EBC255DF4587}
 		{1C166C93-0A50-4634-8A81-41F97B75CB4D} = {909F5BCD-BEBD-4CF9-9CEC-EBC255DF4587}
+		{E7E96126-ECFE-49C7-BA56-C052717A7D12} = {909F5BCD-BEBD-4CF9-9CEC-EBC255DF4587}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3ADEE1B6-8A9E-48AA-A2A3-BCA0F240B101}
